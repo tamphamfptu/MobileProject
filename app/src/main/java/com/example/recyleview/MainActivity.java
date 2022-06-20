@@ -2,6 +2,7 @@ package com.example.recyleview;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -57,14 +58,19 @@ public class MainActivity extends AppCompatActivity {
 
                 boolean check = rememberChk.isChecked();
 
+
+
                 Customer customer = new Customer(username, password);
 
                 if(customerDAO.check(customer)){
                     LuuTT(username,password,check);
                     Customer = customer;
-                    Toast.makeText(MainActivity.this,"THanh cong",Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                    intent.putExtra("keyusername", username);
+                    setResult(RESULT_OK, intent);
+                    startActivity(intent);
                 }else{
-                    Toast.makeText(MainActivity.this,"D Thanh cong",Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this,"Login failed",Toast.LENGTH_LONG).show();
 
                 }
 
