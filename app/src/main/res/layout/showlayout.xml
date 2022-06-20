@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="156dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_baseline_perm_phone_msg_24"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="350dp"
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="575dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/web"
+        android:layout_width="156dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/fab"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_baseline_web_24"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="350dp"
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="575dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/mess"
+        android:layout_width="156dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/web"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_baseline_message_24"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="350dp"
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="575dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/capture"
+        android:layout_width="156dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/mess"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_baseline_camera_alt_24"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="350dp"
+        tools:layout_editor_absoluteX="255dp"
+        tools:layout_editor_absoluteY="575dp" />
+
+</RelativeLayout>
